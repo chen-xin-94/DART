@@ -1,0 +1,117 @@
+{
+    "articulated dump truck": {
+        "avg_score": 0.7764213544627031,
+        "num_ann": 24,
+        "num_img": 23
+    },
+    "bulldozer": {
+        "avg_score": 0.8659036685195234,
+        "num_ann": 216,
+        "num_img": 211
+    },
+    "combined piling and drilling rig": {
+        "avg_score": 0.6155813819982788,
+        "num_ann": 220,
+        "num_img": 202
+    },
+    "crawler crane": {
+        "avg_score": 0.6195114595717506,
+        "num_ann": 1520,
+        "num_img": 1410
+    },
+    "crawler excavator": {
+        "avg_score": 0.8849353240953909,
+        "num_ann": 555,
+        "num_img": 548
+    },
+    "crawler loader": {
+        "avg_score": 0.7232225277322404,
+        "num_ann": 94,
+        "num_img": 94
+    },
+    "duty cycle crane": {
+        "avg_score": 0.7210826894099062,
+        "num_ann": 132,
+        "num_img": 128
+    },
+    "gantry crane": {
+        "avg_score": 0.6271787573371017,
+        "num_ann": 57,
+        "num_img": 54
+    },
+    "log loader": {
+        "avg_score": 0.7075801348686218,
+        "num_ann": 175,
+        "num_img": 174
+    },
+    "maritime crane": {
+        "avg_score": 0.6100786178783103,
+        "num_ann": 572,
+        "num_img": 529
+    },
+    "material handling machine": {
+        "avg_score": 0.7206643997064603,
+        "num_ann": 306,
+        "num_img": 302
+    },
+    "mining bulldozer": {
+        "avg_score": 0.5598187673216065,
+        "num_ann": 96,
+        "num_img": 96
+    },
+    "mining excavator": {
+        "avg_score": 0.6112153119332081,
+        "num_ann": 851,
+        "num_img": 774
+    },
+    "mining truck": {
+        "avg_score": 0.6229371757287047,
+        "num_ann": 184,
+        "num_img": 173
+    },
+    "mobile crane": {
+        "avg_score": 0.6316089842934283,
+        "num_ann": 3847,
+        "num_img": 3722
+    },
+    "pipelayer": {
+        "avg_score": 0.6863475393165241,
+        "num_ann": 55,
+        "num_img": 55
+    },
+    "pontoon excavator": {
+        "avg_score": 0.6267160549759865,
+        "num_ann": 28,
+        "num_img": 28
+    },
+    "reachstacker": {
+        "avg_score": 0.5255975949764252,
+        "num_ann": 25,
+        "num_img": 25
+    },
+    "telescopic handler": {
+        "avg_score": 0.6452235852150207,
+        "num_ann": 47,
+        "num_img": 42
+    },
+    "tower crane": {
+        "avg_score": 0.6488820139253348,
+        "num_ann": 3192,
+        "num_img": 2484
+    },
+    "truck mixer": {
+        "avg_score": 0.8932025853995305,
+        "num_ann": 157,
+        "num_img": 152
+    },
+    "wheel excavator": {
+        "avg_score": 0.8815716549941187,
+        "num_ann": 239,
+        "num_img": 232
+    },
+    "wheel loader": {
+        "avg_score": 0.7476919695767231,
+        "num_ann": 1848,
+        "num_img": 1815
+    }
+}

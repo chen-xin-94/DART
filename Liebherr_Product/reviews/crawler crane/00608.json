@@ -1,0 +1,25 @@
+{
+    "id": "chatcmpl-9W51mBU8ZdqysdX3vTodFj6kCdnZX",
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "```json\n{\"Precision\":\"No\", \"Recall\":\"No\", \"Fit\":\"No\"}\n```\n\nExplanation:\n1. **Precision**: There are no bounding boxes present in the image, so no crawler cranes are enclosed by any bounding boxes.\n2. **Recall**: There are multiple crawler cranes in the image, but none of them are localized by a bounding box.\n3. **Fit**: Since there are no bounding boxes, the fit cannot be evaluated.",
+                "role": "assistant",
+                "function_call": null,
+                "tool_calls": null
+            }
+        }
+    ],
+    "created": 1717432850,
+    "model": "gpt-4o-2024-05-13",
+    "object": "chat.completion",
+    "system_fingerprint": "fp_aa87380ac5",
+    "usage": {
+        "completion_tokens": 94,
+        "prompt_tokens": 683,
+        "total_tokens": 777
+    }
+}

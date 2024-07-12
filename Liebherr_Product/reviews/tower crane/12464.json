@@ -1,0 +1,25 @@
+{
+    "id": "chatcmpl-9W9reptSClFltpFqadlRGcByofGmE",
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "There are no bounding boxes present in the image for evaluation. Therefore, I cannot assess the correctness of any bounding box annotations.\n\n```json\n{\"Precision\":\"No\", \"Recall\":\"No\", \"Fit\":\"No\"}\n```",
+                "role": "assistant",
+                "function_call": null,
+                "tool_calls": null
+            }
+        }
+    ],
+    "created": 1717451442,
+    "model": "gpt-4o-2024-05-13",
+    "object": "chat.completion",
+    "system_fingerprint": "fp_aa87380ac5",
+    "usage": {
+        "completion_tokens": 44,
+        "prompt_tokens": 683,
+        "total_tokens": 727
+    }
+}

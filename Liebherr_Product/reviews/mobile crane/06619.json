@@ -1,0 +1,25 @@
+{
+    "id": "chatcmpl-9W6x9CJEqA81jC9r7Lm6HiLWbqb8t",
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "1. **Precision**: The bounding box on the left perfectly encloses one mobile crane. The bounding box on the right also encloses one mobile crane. Both bounding boxes are correctly identifying individual mobile cranes.\n2. **Recall**: Both mobile cranes in the image are localized by bounding boxes.\n3. **Fit**: The bounding box on the left is slightly loose but acceptable. The bounding box on the right is also slightly loose but acceptable. Both bounding boxes are neither too tight nor too loose.\n\nBased on the above evaluation, here is the JSON response:\n\n```json\n{\"Precision\":\"Yes\", \"Recall\":\"Yes\", \"Fit\":\"Yes\"}\n```",
+                "role": "assistant",
+                "function_call": null,
+                "tool_calls": null
+            }
+        }
+    ],
+    "created": 1717440251,
+    "model": "gpt-4o-2024-05-13",
+    "object": "chat.completion",
+    "system_fingerprint": "fp_aa87380ac5",
+    "usage": {
+        "completion_tokens": 133,
+        "prompt_tokens": 683,
+        "total_tokens": 816
+    }
+}

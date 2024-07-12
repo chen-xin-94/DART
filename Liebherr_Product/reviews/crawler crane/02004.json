@@ -1,0 +1,25 @@
+{
+    "id": "chatcmpl-9W435EESayqoIH6aVY18wTXTgwe9O",
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "```json\n{\"Precision\":\"No\", \"Recall\":\"No\", \"Fit\":\"No\"}\n```\n\nExplanation:\n1. **Precision**: There is no bounding box present in the image, so no target object is enclosed.\n2. **Recall**: There is no bounding box present in the image, so no target object is localized.\n3. **Fit**: There is no bounding box present in the image, so the fit cannot be evaluated.",
+                "role": "assistant",
+                "function_call": null,
+                "tool_calls": null
+            }
+        }
+    ],
+    "created": 1717429087,
+    "model": "gpt-4o-2024-05-13",
+    "object": "chat.completion",
+    "system_fingerprint": "fp_aa87380ac5",
+    "usage": {
+        "completion_tokens": 91,
+        "prompt_tokens": 683,
+        "total_tokens": 774
+    }
+}

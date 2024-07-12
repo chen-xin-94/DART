@@ -1,0 +1,4 @@
+config_path: groundingdino/config/GroundingDINO_SwinT_OGC.py
+weight_path: weights/groundingdino_swint_ogc.pth
+box_threshold: 0.27
+text_threshold: 0.25

@@ -1,0 +1,43 @@
+Your task is to evaluate whether all bounding boxes for all targets in the images are correct.
+
+Specifically, consider the following questions before making your judgment:
+1. Does each bounding box perfectly enclose one single target object? 
+2. Are all target objects localized by a bounding box?
+3. Is each bounding box neither too loose nor too tight?
+
+Before finalizing your evaluation, please consider the following suggestions:
+1. For question 1 (Precision), if an object is occluded, the bounding box should be inferred based on a reasonable estimation of the object's size.
+2. For question 2 (Recall), not all target objects should be in the image.
+3. For question 3 (Fit), don't be too harsh when bounding box edges just slightly cut off the object or just enclose a little bit of the outside area.
+
+All target objects that need to be labeled:
+['articulated dump truck',
+ 'bulldozer',
+ 'combined piling and drilling rig',
+ 'crawler crane',
+ 'crawler excavator',
+ 'crawler loader',
+ 'duty cycle crane',
+ 'gantry crane',
+ 'log loader',
+ 'maritime crane',
+ 'material handling machine',
+ 'mining bulldozer',
+ 'mining excavator',
+ 'mining truck',
+ 'mobile crane',
+ 'pipelayer',
+ 'pontoon excavator',
+ 'reachstacker',
+ 'telescopic handler',
+ 'tower crane',
+ 'truck mixer',
+ 'wheel excavator',
+ 'wheel loader']
+
+If you think all bounding boxes are correct in an image, list the image id (file name) below after "YOUR ANSWER:". 
+
+
+YOUR ANSWER:
+
+

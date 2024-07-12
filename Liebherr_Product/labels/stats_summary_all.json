@@ -1,0 +1,17 @@
+{
+    "one": {
+        "avg_score": 0.4908609150638121,
+        "num_ann": 33271,
+        "num_img": 15288
+    },
+    "synonym_sep": {
+        "avg_score": 0.4601171377785204,
+        "num_ann": 43393,
+        "num_img": 14185
+    },
+    "all": {
+        "avg_score": 0.3362542936543786,
+        "num_ann": 76913,
+        "num_img": 15288
+    }
+}

@@ -1,0 +1,30 @@
+path: /mnt/ssd2/xin/repo/DART/Liebherr_Product/yolo_filter
+train: /mnt/ssd2/xin/repo/DART/Liebherr_Product/yolo_filter_0.75/trainval.txt
+val: /mnt/ssd2/xin/repo/DART/Liebherr_Product/yolo_filter_0.75/test.txt
+test: /mnt/ssd2/xin/repo/DART/Liebherr_Product/yolo_filter_0.75/test.txt
+
+# Classes
+names:
+  0: articulated dump truck
+  1: bulldozer
+  2: combined piling and drilling rig
+  3: crawler crane
+  4: crawler excavator
+  5: crawler loader
+  6: duty cycle crane
+  7: gantry crane
+  8: log loader
+  9: maritime crane
+  10: material handling machine
+  11: mining bulldozer
+  12: mining excavator
+  13: mining truck
+  14: mobile crane
+  15: pipelayer
+  16: pontoon excavator
+  17: reachstacker
+  18: telescopic handler
+  19: tower crane
+  20: truck mixer
+  21: wheel excavator
+  22: wheel loader

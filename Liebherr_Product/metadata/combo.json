@@ -1,0 +1,7 @@
+{
+    "articulated dump truck": "crawler excavator",
+    "mining bulldozer": "mining excavator",
+    "mining truck": "mining excavator",
+    "mining excavator": "mining truck",
+    "reachstacker": "maritime crane"
+}

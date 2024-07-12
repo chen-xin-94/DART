@@ -1,0 +1,25 @@
+{
+    "id": "chatcmpl-9W6RZk5S7N8ZmxbYvdRYQsehtkkQM",
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "```json\n{\"Precision\":\"No\", \"Recall\":\"No\", \"Fit\":\"No\"}\n```\n\nExplanation:\n1. **Precision**: There is no bounding box present in the image, so no target object is enclosed.\n2. **Recall**: The mobile crane is not localized by any bounding box.\n3. **Fit**: Since there is no bounding box, it cannot be evaluated for fit.",
+                "role": "assistant",
+                "function_call": null,
+                "tool_calls": null
+            }
+        }
+    ],
+    "created": 1717438293,
+    "model": "gpt-4o-2024-05-13",
+    "object": "chat.completion",
+    "system_fingerprint": "fp_aa87380ac5",
+    "usage": {
+        "completion_tokens": 82,
+        "prompt_tokens": 683,
+        "total_tokens": 765
+    }
+}

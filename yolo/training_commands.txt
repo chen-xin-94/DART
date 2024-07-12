@@ -1,0 +1,1 @@
+yolo detect train data=cfg/datasets/train_gen_0.75.yaml model=yolov8n.pt epochs=60 imgsz=640 optimizer=AdamW lr0=2e-4 lrf=0.5 warmup_epochs=2 batch=64 cos_lr=True

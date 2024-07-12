@@ -1,0 +1,4 @@
+config_path: groundingdino/config/GroundingDINO_SwinB_cfg.py
+weight_path: weights/groundingdino_swinb_cogcoor.pth 
+box_threshold: 0.27
+text_threshold: 0.25

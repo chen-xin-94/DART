@@ -1,0 +1,73 @@
+{
+    "articulated dump truck": [
+    ],
+    "bulldozer": [
+        "dozer", 
+        "crawler tractor"
+    ],
+    "crawler crane": [
+        "track crane"
+    ],
+    "crawler excavator": [
+        "track excavator"
+    ],
+    "crawler loader": [
+        "track loader"
+    ],
+    "combined piling and drilling rig": [
+        "drilling rig",
+        "piling rig"
+    ],
+    "duty cycle crane": [
+        "dragline",
+        "dragline excavator"
+    ],
+    "gantry crane": [
+        "container crane"
+    ],
+    "log loader": [
+        "log handling machine"
+    ],
+    "maritime crane": [
+        "harbor crane",
+        "port crane"
+    ],
+    "material handling machine": [
+        "material handler"
+    ],
+    "mining bulldozer": [
+    ],
+    "mining excavator": [
+    ],
+    "mining truck": [
+    ],
+    "mobile crane": [],
+    "pipelayer": [
+        "sideboom"
+    ],
+    "pontoon excavator": [
+        "floating excavator",
+        "amphibious excavator"
+    ],
+    "reachstacker": [
+        "container handler"
+    ],
+    "telescopic handler": [
+        "lull",
+        "telehandler",
+        "reach forklift",
+        "zoom boom"
+    ],
+    "tower crane": [],
+    "truck mixer": [
+        "cement mixer truck",
+        "concrete mixer truck"
+    ],
+    "wheel loader": [
+        "front end loader",
+        "bucket loader"
+    ],
+    "wheel excavator": [
+        "mobile excavator"
+    ]
+}

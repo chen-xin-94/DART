@@ -1,0 +1,12 @@
+{
+    "crawler crane": "crane",
+    "crawler excavator": "excavator",
+    "gantry crane": "maritime crane",
+    "maritime crane": "crane",
+    "mobile crane": "crane",
+    "pontoon excavator": "excavator",
+    "tower crane": "crane",
+    "wheel excavator": "excavator",
+    "reachstacker": "material handling equipment",
+    "telescopic handler": "material handling equipment"
+}

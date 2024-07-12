@@ -1,0 +1,25 @@
+{
+    "id": "chatcmpl-9WB3do1Anf6amTW25q1zKzNgDGwcO",
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "1. **Precision**: Each bounding box perfectly encloses one single target object. Both bounding boxes correctly enclose one wheel loader each without including other objects.\n2. **Recall**: All target objects are localized by a bounding box. There are two wheel loaders in the image, and both are annotated with bounding boxes.\n3. **Fit**: Each bounding box is neither too loose nor too tight. The bounding boxes fit well around the wheel loaders, with slight allowances for minor cut-offs or extra space.\n\nBased on these observations, here is the evaluation:\n\n```json\n{\"Precision\":\"Yes\", \"Recall\":\"Yes\", \"Fit\":\"Yes\"}\n```",
+                "role": "assistant",
+                "function_call": null,
+                "tool_calls": null
+            }
+        }
+    ],
+    "created": 1717456029,
+    "model": "gpt-4o-2024-05-13",
+    "object": "chat.completion",
+    "system_fingerprint": "fp_aa87380ac5",
+    "usage": {
+        "completion_tokens": 132,
+        "prompt_tokens": 683,
+        "total_tokens": 815
+    }
+}
