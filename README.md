@@ -1,7 +1,7 @@
 # DART
 An automated end-to-end object detection pipeline with data **D**iversification, open-vocabulary bounding box **A**nnotation, pseudo-label **R**eview, and model **T**raining
 
-[arXiv](TODO)
+[arXiv](https://arxiv.org/abs/2407.09174) | [dataset](https://syncandshare.lrz.de/getlink/fi9HcSsruiQLQHV4LK8Tpa/Liebherr_Product.zip)
 
 ## Overview
 
@@ -25,7 +25,7 @@ contains the code for training and inference of SDXL with `dreambooth`, as well 
 contains figures used in the repo.
 
 ### `/Liebherr_Product`
-the dataset folder. `images` should be downloaded separately from [here](https://syncandshare.lrz.de/getlink/fi9HcSsruiQLQHV4LK8Tpa/Liebherr_Product.zip). This folder also includes lists and statistics of pseudo `labels`, `metadata` containing useful information extracted during dasets preprocessing, responses from GPT-4-based `reviews`, `questionnaire` used for evaluating GPT-4's performance, and general `tools` for facilitating interaction with the dataset.
+the dataset folder. `images` should be downloaded separately (following the [data preparation section](#data-preparation) of this repo). This folder also includes lists and statistics of pseudo `labels`, `metadata` containing useful information extracted during dasets preprocessing, responses from GPT-4-based `reviews`, `questionnaire` used for evaluating GPT-4's performance, and general `tools` for facilitating interaction with the dataset.
 
 ### `/lmm`
 contains code for two LMM-based review: GPT-4o-based pseudo-label review and image photorealism for generated data via InternVL-1-5 
@@ -221,3 +221,14 @@ Here are some sample results. Please check out our read our paper for more!
 ### Images annotated by Grounding DINO and approved by GPT-4o
 ![image_grid_orig_aa](/figures/image_grid_orig_aa.jpg)
 ## Citation
+```
+@misc{xinDART2024,
+      title={DART: An Automated End-to-End Object Detection Pipeline with Data Diversification, Open-Vocabulary Bounding Box Annotation, Pseudo-Label Review, and Model Training}, 
+      author={Chen Xin and Andreas Hartel and Enkelejda Kasneci},
+      year={2024},
+      eprint={2407.09174},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.09174}, 
+}
+```
