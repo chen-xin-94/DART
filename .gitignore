@@ -139,14 +139,17 @@ install_manifest.txt
 *.cmake
 *.cmake.in
 
+# MAC
+.DS_Store
+
 # torch
 *.pt
 *.pth
 
 # diversification
 output/
-class_data
-instance_data
+# class_data
+# instance_data
 *(fine-tuning)
 logs*
 generated_data*
