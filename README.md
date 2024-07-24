@@ -12,31 +12,36 @@ This repository contains the implementation of **DART**, an automated end-to-end
 - LMM-based **R**eview of pseudo-labels and image photorealism using InternVL-1.5 and GPT-4o
 - Real-time object detector **T**raining for YOLOv8 and YOLOv10
 
+The current instantiation of DART significantly increases the average precision (AP) from 0.064 to 0.832 for a YOLOv8n model on the [Liebherr Product dataset](#liebherr-product-dataset), demonstrating the effectiveness of our approach.
+
 ![DART](/figures/DART_flowchart.svg)
+
+## Liebherr Product Dataset
+This repository contains a self-collected dataset of construction machines named Liebherr Product (LP), which contains over 15K high-quality images across 23 categories. This extensive collection focuses on a diverse range of construction machinery from Liebherr products, including articulated dump trucks, bulldozers, combined piling and drilling rigs, various types of cranes, excavators, loaders, and more. A list of all 23 classes can be found in [classes.json](/Liebherr_Product/metadata/classes.json). For detailed information on the data collection, curation, and preprocessing of this dataset, please check out [our paper](https://arxiv.org/abs/2407.09174). The images can be downloaded and processed by following the instructions in [this section](#data-preparation).
 
 ## Repository Structure
 
 This repository contains the following folders and files, each serving a specific purpose:
 
-### `/diversification`
+### `./diversification`
 contains the code for training and inference of SDXL with `dreambooth`, as well as generated `class_data` and collected `instance_data`.
 
-### `/figures`
+### `./figures`
 contains figures used in the repo.
 
-### `/Liebherr_Product`
-the dataset folder. `images` should be downloaded separately (following the [data preparation section](#data-preparation) of this repo). This folder also includes lists and statistics of pseudo `labels`, `metadata` containing useful information extracted during dasets preprocessing, responses from GPT-4-based `reviews`, `questionnaire` used for evaluating GPT-4's performance, and general `tools` for facilitating interaction with the dataset.
+### `./Liebherr_Product`
+the dataset folder. `images` should be downloaded separately (following instructions in [this section](#data-preparation)). This folder also includes lists and statistics of pseudo `labels`, `metadata` containing useful information extracted during dasets preprocessing, responses from GPT-4-based `reviews`, `questionnaire` used for evaluating GPT-4's performance, and general `tools` for facilitating interaction with the dataset.
 
-### `/lmm`
-contains code for two LMM-based review: GPT-4o-based pseudo-label review and image photorealism for generated data via InternVL-1-5 
+### `./lmm`
+contains code for two LMM-based review: GPT-4o-based pseudo-label review and image photorealism for generated data via InternVL-1-5. 
 
-### `/ovd`
-contains code for bounding box generation with Grounidng DINO and label processing
+### `./ovd`
+contains code for bounding box generation with Grounidng DINO and label processing.
 
-### `/vis`
-contains figures used in the paper and their corresponding code
+### `./vis`
+contains figures used in the paper and their corresponding code.
 
-### `/yolo`
+### `./yolo`
 contains code and commands for data split, hyperparameter fine-tuning, training and prediction with yolov8.
 
 ## Setup
@@ -63,9 +68,9 @@ contains code and commands for data split, hyperparameter fine-tuning, training 
 
 ### Data preparation
 
-1. Download the dataset via [this link](https://syncandshare.lrz.de/getlink/fi9HcSsruiQLQHV4LK8Tpa/Liebherr_Product.zip), and stored the image files in '/Liebherr_Product/images/'
-2. Collect instance data and store it as `instance_data/{class_name}/{instance_name}`, e.g. `instance_data/articulated_dump_truck/TA230`.
-3. Change the default paths in the following scripts or specify as arguments while running
+1. Download the dataset via [this link](https://syncandshare.lrz.de/getlink/fi9HcSsruiQLQHV4LK8Tpa/Liebherr_Product.zip), and extract the `images` folder to `./Liebherr_Product/images/`.
+2. Collect instance data and store them in `./diversification/instance_data/{class_name}/{instance_name}`, e.g. `./diversification/instance_data/articulated_dump_truck/TA230`.
+3. Change the default paths in the following scripts or specify as arguments while running.
 
 
 ### Annotation and review for collected data
