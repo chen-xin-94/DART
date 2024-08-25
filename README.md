@@ -1,7 +1,7 @@
 # DART
 An automated end-to-end object detection pipeline with data **D**iversification, open-vocabulary bounding box **A**nnotation, pseudo-label **R**eview, and model **T**raining
 
-[arXiv](https://arxiv.org/abs/2407.09174) | [dataset](https://syncandshare.lrz.de/getlink/fi9HcSsruiQLQHV4LK8Tpa/Liebherr_Product.zip)
+[Paper](https://doi.org/10.1016/j.eswa.2024.125124) | [Dataset](https://syncandshare.lrz.de/getlink/fi9HcSsruiQLQHV4LK8Tpa/Liebherr_Product.zip)
 
 ## Overview
 
@@ -17,7 +17,7 @@ The current instantiation of DART significantly increases the average precision 
 ![DART](/figures/DART_flowchart.svg)
 
 ## Liebherr Product Dataset
-This repository contains a self-collected dataset of construction machines named Liebherr Product (LP), which contains over 15K high-quality images across 23 categories. This extensive collection focuses on a diverse range of construction machinery from Liebherr products, including articulated dump trucks, bulldozers, combined piling and drilling rigs, various types of cranes, excavators, loaders, and more. A list of all 23 classes can be found in [classes.json](/Liebherr_Product/metadata/classes.json). For detailed information on the data collection, curation, and preprocessing of this dataset, please check out [our paper](https://arxiv.org/abs/2407.09174). The images can be downloaded and processed by following the instructions in [this section](#data-preparation).
+This repository contains a self-collected dataset of construction machines named Liebherr Product (LP), which contains over 15K high-quality images across 23 categories. This extensive collection focuses on a diverse range of construction machinery from Liebherr products, including articulated dump trucks, bulldozers, combined piling and drilling rigs, various types of cranes, excavators, loaders, and more. A list of all 23 classes can be found in [classes.json](/Liebherr_Product/metadata/classes.json). For detailed information on the data collection, curation, and preprocessing of this dataset, please check out our [paper](https://doi.org/10.1016/j.eswa.2024.125124). The images can be downloaded and processed by following the instructions in [this section](#data-preparation).
 
 ## Repository Structure
 
@@ -227,13 +227,12 @@ Here are some sample results. Please check out our read our paper for more!
 ![image_grid_orig_aa](/figures/image_grid_orig_aa.jpg)
 ## Citation
 ```
-@misc{xinDART2024,
-      title={DART: An Automated End-to-End Object Detection Pipeline with Data Diversification, Open-Vocabulary Bounding Box Annotation, Pseudo-Label Review, and Model Training}, 
-      author={Chen Xin and Andreas Hartel and Enkelejda Kasneci},
-      year={2024},
-      eprint={2407.09174},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2407.09174}, 
+@article{xin2024dart,
+  title={DART: An automated end-to-end object detection pipeline with data Diversification, open-vocabulary bounding box Annotation, pseudo-label Review, and model Training},
+  author={Xin, Chen and Hartel, Andreas and Kasneci, Enkelejda},
+  journal={Expert Systems with Applications},
+  pages={125124},
+  year={2024},
+  publisher={Elsevier}
 }
 ```
