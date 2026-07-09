@@ -1,7 +1,7 @@
 # DART
 An automated end-to-end object detection pipeline with data **D**iversification, open-vocabulary bounding box **A**nnotation, pseudo-label **R**eview, and model **T**raining
 
-[Paper](https://doi.org/10.1016/j.eswa.2024.125124) | [Dataset](https://syncandshare.lrz.de/getlink/fi9HcSsruiQLQHV4LK8Tpa/Liebherr_Product.zip)
+[Paper](https://doi.org/10.1016/j.eswa.2024.125124) | [Dataset](https://huggingface.co/datasets/Moonxc/Liebherr_Product)
 
 ## Overview
 
@@ -68,7 +68,21 @@ contains code and commands for data split, hyperparameter fine-tuning, training 
 
 ### Data preparation
 
-1. Download the dataset via [this link](https://syncandshare.lrz.de/getlink/fi9HcSsruiQLQHV4LK8Tpa/Liebherr_Product.zip), and extract the `images` folder to `./Liebherr_Product/images/`.
+1. The dataset is hosted on the Hugging Face Hub as a **gated** dataset: [Moonxc/Liebherr_Product](https://huggingface.co/datasets/Moonxc/Liebherr_Product). Click **Request access**, fill in the short form, and once approved you can download it. Then place the `images` folder at `./Liebherr_Product/images/`.
+
+    Download after approval (requires `huggingface_hub`, and `hf auth login` with your own account):
+    ```bash
+    hf download Moonxc/Liebherr_Product --repo-type dataset --local-dir ./Liebherr_Product
+    ```
+    or in Python:
+    ```python
+    from huggingface_hub import snapshot_download
+    snapshot_download(
+        repo_id="Moonxc/Liebherr_Product",
+        repo_type="dataset",
+        local_dir="./Liebherr_Product",
+    )
+    ```
 2. Collect instance data and store them in `./diversification/instance_data/{class_name}/{instance_name}`, e.g. `./diversification/instance_data/articulated_dump_truck/TA230`.
 3. Change the default paths in the following scripts or specify as arguments while running.
 
