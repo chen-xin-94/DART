@@ -1,3 +1,5 @@
+
+
 # DART
 An automated end-to-end object detection pipeline with data **D**iversification, open-vocabulary bounding box **A**nnotation, pseudo-label **R**eview, and model **T**raining
 
@@ -36,7 +38,7 @@ the dataset folder. `images` should be downloaded separately (following instruct
 contains code for two LMM-based review: GPT-4o-based pseudo-label review and image photorealism for generated data via InternVL-1-5. 
 
 ### `./ovd`
-contains code for bounding box generation with Grounidng DINO and label processing.
+contains code for bounding box generation with Grounding DINO and label processing.
 
 ### `./vis`
 contains figures used in the paper and their corresponding code.
@@ -85,11 +87,7 @@ contains code and commands for data split, hyperparameter fine-tuning, training 
     ```
 2. Collect instance data and store them in `./diversification/instance_data/{class_name}/{instance_name}`, e.g. `./diversification/instance_data/articulated_dump_truck/TA230`.
 3. Change the default paths in the following scripts or specify as arguments while running.
-
-
-### Annotation and review for collected data
-
-1. Annotate collected data with "orignal" and "co-occurring" prompt:
+3. Change the default paths in the following scripts or specify as arguments while running.
     ```bash
     python ovd/labeling.py -p one
     ```
